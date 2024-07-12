@@ -1,0 +1,28 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+     <!--  <img src="https://www.b-cube.in/wp-content/uploads/2014/05/aditya-300x177.jpg" id="icon" alt="User Icon" /> -->
+      <h1>Online Iraq </h1>
+      <h4 style="color:rgb(55, 141, 156);">بازاڕکردن بەشێوەی ئۆنلاین  </h4>
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <input matInput type="text" id="login" class="fadeIn second" name="login"formControlName="code" placeholder="کۆدی بەکارهێنەر" required>
+      <input matInput type="password" id="password" class="fadeIn third" name="login" formControlName="password" placeholder="ووشەی نهێنی" required>
+      <input type="submit" class="btn btn-outline-success fadeIn fourth" [disabled]="!loginForm.valid" value="چوونەژورەوە">
+    </form>
+
+    <!-- Remind Passowrd -->
+   <!--  <div id="formFooter">
+      <a class="underlineHover">Go to the Site</a>
+    </div>
+ -->
+  </div>
+</div>
+
+
+<!-- <button (click)="getdata()">asd</button> -->
